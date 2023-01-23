@@ -31,7 +31,18 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <button onClick={fetchWeather}>Fecht data</button>
+            {/* Overlay */}
+            <div className='absolute top-0 left-0 right-0 bottom-0 bg-black/20 z-[1]'/>
+
+            {/* Background Image */}
+            <Image 
+                src='https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80' 
+                fill alt='clima' 
+                className='object-cover'
+            />
+
+            {/* Search */}
+            
         </>
     )
 }
